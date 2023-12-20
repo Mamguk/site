@@ -1,0 +1,585 @@
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ */
+@font-face {
+    font-family: 'ArM';
+    src: url(fonts/Windows/Arimo-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'ArR';
+    src: url(fonts/Windows/Arimo-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'YesR';
+    src: url(fonts/Windows/YesevaOne-Regular.ttf);
+}
+
+/* НОРМАЛИЗАЦИЯ ВСЕХ ЭЛЕМЕНТОВ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'YesR';
+    color: #5c41a8;
+}
+
+p {
+    font-family: 'ArM';
+    color: #231840;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+/* УСТАНОВКА ОТСТУПА ДЛЯ КАЖДОЙ СЕКЦИИ */
+section {
+    margin-top: 150px;
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ "ГЛАВНЫЙ ЭКРАН" */
+header {
+    background: url(img/main.jpg) no-repeat top/cover;
+    padding-top: 25px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #7a60c5;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    font-family: 'ArR';
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    gap: 70px;
+}
+
+.main-header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.main-header-text h3 {
+    font-size: 40px;
+}
+
+.main-header-text h1 {
+    font-size: 70px;
+    width: 900px;
+}
+
+.main-header-text p {
+    font-size: 20px;
+    width: 620px;
+}
+
+.main-header a {
+    font-family: 'YesR';
+    text-decoration: none;
+    color: #fff;
+    background: #7a60c5;
+    padding: 15px 60px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: block;
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ "КАТАЛОГ" */
+.products-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.products-text h2 {
+    font-size: 45px;
+}
+
+.products-text p {
+    font-size: 18px;
+    width: 500px;
+}
+
+.kat-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.kat-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.kat-card-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.hit {
+    position: absolute;
+    left: 270px;
+    top: 30px;
+}
+
+.kat-card-name h3, h4 {
+    color: #231840;
+    font-weight: 700;
+}
+
+.kat-card-name h3 {
+    font-size: 25px;
+}
+
+.kat-card-name h4 {
+    font-size: 18px;
+}
+
+.sale {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+
+.price-old {
+    color: #f04764;
+    text-decoration: line-through;
+}
+
+.buy-btn {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'YesR';
+    font-size: 16px;
+    background: #7a60c5;
+    border-radius: 10px;
+    padding: 15px 50px;
+}
+
+.lines {
+    padding: 50px 0 30px 0;
+    display: flex;
+}
+
+.first-line {
+    height: 1px;
+    width: 50%;
+    background: #7a60c5;
+}
+
+.second-line {
+    height: 1px;
+    width: 50%;
+    background: #d6d4d9;
+}
+
+.arrows {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ "НОВИНКИ" */
+.block-new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 100px;
+    background: #f5f9d4;
+    border-radius: 30px;
+}
+
+.block-new-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.block-new-text-name {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.block-new-text h2 {
+    font-size: 45px;
+}
+
+.block-new-text p {
+    font-size: 18px;
+    width: 420px;
+}
+
+.block-new .buy-btn {
+    width: 160px;
+}
+
+.new {
+    border-radius: 50px;
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ "КАРТОЧКА ТОВАРА" */
+.product-card-wrap {
+    display: flex;
+}
+
+.product-card-right {
+    background: #7a60c5;
+    width: 100%;
+    padding: 150px 80px 50px 80px;
+}
+
+.name-stars-otzyv {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+
+.name-stars-otzyv h2 {
+    font-size: 45px;
+    color: #fff;
+}
+
+.stars-otzyv {
+    display: flex;
+    gap: 10px;
+}
+
+.stars-otzyv p {
+    color: #fff;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.product-card-descrip {
+    color: #fff;
+    max-width: 500px;
+}
+
+.choice-wrapper {
+    padding-top: 50px;
+    display: flex;
+    gap: 68px;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.choice h5 {
+    color: #fff;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: #d0d5fd;
+    color: #5c41a8;
+}
+
+.choice:focus {
+    cursor: pointer;
+    background: #d0d5fd;
+    color: #5c41a8;
+}
+
+.choice h5 {
+    padding: 16px 25px;
+}
+
+.line {
+    height: 1px;
+    background: #fff;
+    width: 100%;
+}
+
+.choice-num-buy {
+    display: flex;
+    gap: 58px;
+    margin-top: 40px;
+}
+
+.choice-num {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 18px 14px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 125px;
+}
+
+.choice-num img {
+    cursor: pointer;
+}
+
+.choice-num p {
+    color: #fff;
+}
+
+.choice-num-buy a {
+    font-family: 'YesR';
+    font-weight: 600;
+    text-decoration: none;
+    color: #241941;
+    padding: 18px 149px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #d0d5fd;
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ "О НАС" */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-text {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.about-us-text h2 {
+    font-size: 45px;
+    width: 400px;
+}
+
+.about-us-descrip {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 420px;
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ "ПРЕИМУЩЕСТВА" */
+.advantages-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.advantage h3 {
+    width: 220px;
+}
+
+.advantage p {
+    width: 320px;
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ "ФОРМА" */
+.border {
+   background: #d0d5fd; 
+   border-radius: 10px;
+   padding: 40px;
+}
+
+.fos {
+    background: #ecedff;
+    border-radius: 10px;
+    padding: 110px 228px;
+}
+
+.fos-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fos-text h2 {
+    font-size: 40px;
+    text-align: center;
+    width: 580px;
+    padding-bottom: 20px;
+}
+
+.fos-text p {
+    font-size: 18px;
+    text-align: center;
+    width: 470px;
+    padding-bottom: 50px;
+}
+
+label {
+    font-family: 'ArR';
+}
+
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 30px;
+}
+
+.input-hold {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 120px;
+}
+
+.input-hold input {
+    background: none;
+    border: 1px solid #241941;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'ArR';
+    font-size: 16px;
+}
+
+.radio {
+    display: flex;
+    gap: 10px;
+}
+
+.communicate {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 120px;
+}
+
+.communicate input {
+    accent-color: #7b61c6;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.communicate .buy-btn {
+    text-align: center;
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ "ПОДВАЛ" */
+footer {
+    margin-top: 100px;
+    background: #7a60c5;
+    padding: 50px 0;
+}
+
+.all-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer-top a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    color: #fff;
+    font-size: 90px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-menu-side {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 15px;
+    font-family: 'ArM';
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+.politics {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+}
+
+.politics a, .politics p {
+    color: #fff;
+    font-family: 'ArR';
+    font-weight: 400;
+    text-align: right;
+}

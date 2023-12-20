@@ -1,0 +1,319 @@
+/* шрифты */
+@font-face {
+    font-family: "Manrope-Medium";
+    src: url("media/fonts/Windows/Manrope-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Manrope-Regular";
+    src: url("media/fonts/Windows/Manrope-Regular.ttf");
+}
+@font-face {
+    font-family: "Prata-Regular";
+    src: url("media/fonts/Windows/Prata-Regular.ttf");
+}
+body{
+    background-color: rgba(128, 128, 128, 0.288);
+}
+/* шапка сайта */
+.shapka{
+    width: 1366px;
+    margin: 0px auto;
+    height: 50px;
+    
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    margin: 30px 0px;
+    
+}
+.list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    font-family: "Manrope-Medium";
+}
+.img1{
+    margin-left: 25px;
+}
+
+/* первый блок */
+.block1{
+    width: 100%;
+    height: 1100px;
+   
+}
+.jpg1{
+    width: 100%;
+    position: absolute;
+}
+.txt1{
+    position: relative;
+    font-size: 35px;
+    margin-left: 75px;
+    font-family: "Prata-Regular";
+    padding-top: 100px;
+    font-weight: 200;
+}
+.txt2{
+    position: relative;
+    font-size: 25px;
+    margin-left: 75px;
+    font-family: "Manrope-Medium";
+}
+.btn1{
+    background: transparent;
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    font-family: "Manrope-Medium";
+    margin-left: 75px;
+    margin-top: 30px;
+    border-color:  rgba(128, 128, 128, 0.308);
+}
+
+/* Бестселлеры */
+.block2{
+    width: 80%;
+    margin-left: 200px;
+}
+.best{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.txt3{
+    font-size: 35px;
+    font-family: "Prata-Regular";
+}
+.strelki{
+    float: right;
+}
+.img2{
+    width: 450px;
+    height: 570px;
+}
+.txt4{
+    font-family: "Prata-Regular";
+    font-size: 20px;
+}
+
+/* о товаре */
+.block3{
+    width: 100%;
+    height: 660px;
+    margin-top: 200px;
+}
+
+/* карточка товара */
+.korzina{
+    border-bottom: 1px solid gray;
+    display: flex;
+    gap: 50px;
+}
+.foto{
+    background: url("media/img/product_card.jpg");
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 800px;
+}
+.korzina-grid{
+    width: 800px;
+}
+.korzina-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.korzina-title-left{
+    font-size: 42px;
+    font-family: "Prata-Regular";
+}
+.korzina-title-right{
+    display: flex;
+    font-size: 12px;
+    gap: 5px;
+    align-items: center;
+}
+.korzina-title-right img{
+    margin-right: 5px;
+}
+.korzina-title-right p{
+    font-size: 12px;
+    margin-left: 10px;
+    font-family: "Manrope-Regular";
+}
+.korzina-price{
+    margin: 20px 0px 30px 0px;
+    font-size: 30px;
+    font-family: "Prata-Regular";
+}
+.korzina-text{
+    font-size: 16px;
+    font-family: "Manrope-Regular";
+}
+.korzina-table-up{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.korzina-table-up-left{
+    padding-top: 30px;
+    border-right: 1px solid gray;
+    font-family: "Manrope-Regular";
+}
+.korzina-table-up-left-img{
+    margin: 20px 120px 40px 0px;
+}
+.korzina-table-up-left-img img{
+    margin-right: 20px;
+}
+.korzina-table-up-right{
+    padding: 30px 0px 0px 0px;
+}
+.korzina-table-up-right-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 15px 0px;
+    font-family: "Manrope-Regular";
+}
+.circle-all{
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+    gap: 10px;
+}
+.circle1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(150, 150, 150);
+}
+.circle2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(202, 202, 202);
+}
+.korzina-table-down{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.korzina-table-down-left{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid gray;
+    height: 70px;
+    font-family: "Manrope-Regular";
+}
+.korzina-table-down-left img{
+    margin-left: 264px;
+    margin-right: 20px;
+}
+.korzina-table-dowwn-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Manrope-Regular";
+}
+.quantity{
+    margin-left: 245px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#button3{
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px 0px;
+    border: 1px solid gray;
+    background: transparent;
+    cursor: pointer;
+    font-family: "Manrope-Regular";
+}
+/* О нас */
+.block4{
+    width: 100%;
+    height: 1000px;
+}
+.about{
+    float:right ;
+    width: 700px;
+    height: 450px;
+    margin-top: -400px;
+    margin-right: 100px;
+}
+.lin1{
+    width: 100%;
+    margin-top: 150px;
+}
+
+/* Преимущества */
+.txt5{
+    font-family: "Prata-Regular";
+    font-size:18px;
+}
+.img3{
+    width: 100px;
+    height: 100px;
+}
+
+/* форма */
+.block5{
+    width: 100%;
+    height: 1200px;
+    margin-left: 100px;
+}
+.form{
+    width: 800px;
+    height: 60px;
+    margin-left: 75px;
+    background-color: transparent;
+    border-color: rgba(128, 128, 128, 0.308);
+    font-family: "Manrope-Regular";
+    font-size: 25px;
+}
+.radio{
+    display: flex;
+    font-family: "Manrope-Regular";
+    font-size: 25px;
+    margin-left: 75px;
+}
+.btn2{
+    background: transparent;
+    width: 800px;
+    height: 50px;
+    font-size: 15px;
+    font-family: "Manrope-Medium";
+    margin-left: 75px;
+    margin-top: 30px;
+    border-color:  rgba(128, 128, 128, 0.308);
+}
+.img4{
+    float: right;
+    margin-top: -800px;
+    margin-right: 150px;
+    width: 700px;
+    height: 900px;
+}
+.pod{
+    text-align: center;
+    font-family: "Manrope-Medium";
+    background-color: rgba(128, 128, 128, 0.363);
+}
+.pod1{
+    display: flex;
+    margin-left: 650px;
+    gap: 30px;
+    font-size: 14px;
+    font-family: "Manrope-Medium";
+}
